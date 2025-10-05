@@ -9,6 +9,11 @@ import groupIcone from "../assets/groups.png";
 import membersIcone from "../assets/members.png";
 import associationIcone from "../assets/association.png";
 import Rafiqi from "../assets/rafiki.png";
+import Payment from "../assets/Payment.png";
+import Member from "../assets/Member.png";
+import Club from "../assets/Club.png";
+import Event from "../assets/Event.png";
+
 const Clients = () => {
   return (
     <div>
@@ -60,7 +65,7 @@ const Clients = () => {
           </p>
         </div>
       </div>
-      <div className="bg-blue-100 flex items-center justify-center gap-20 py-16 px-32 mb-16">
+      <div className="bg-blue-100 flex items-center justify-center gap-20 py-16 px-32">
         <div>
           <img src={Rafiqi} alt="Rafiqi" className="w-[600px]" />
         </div>
@@ -79,6 +84,49 @@ const Clients = () => {
           <button className="mt-6 text-white bg-green-500 border border-green-500 rounded-md py-2 px-4">
             Learn More
           </button>
+        </div>
+      </div>
+      <div className="flex flex-row gap-20 justify-center bg-[#F5F7FA] p-10 px-32">
+        <div>
+          <p className="text-5xl font-bold leading-normal ">
+            Helping a local <br />
+            <span className="text-green-500">business reinvent itself</span>
+          </p>
+          <p>We reached here with our hard work and dedication</p>
+        </div>
+        <div>
+          <div className="flex flex-row gap-8 mt-4">
+            <div className="flex flex-row items-center">
+              <img src={Member} alt="members" className="w-12 h-9 mx-4" />
+              <div>
+                <p className="text-3xl  font-medium">2,245,341</p>
+                <p>Members</p>
+              </div>
+            </div>
+            <div className="flex flex-row items-center ">
+              <img src={Club} alt="Clubs" className="w-12 h-11 mx-4" />
+              <div>
+                <p className="text-3xl  font-medium">46, 328</p>
+                <p>Clubs</p>
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-row gap-8 mt-4">
+            <div className="flex flex-row items-center">
+              <img src={Event} alt="Events" className="w-12 h-13 mx-4" />
+              <div>
+                <p className="text-3xl  font-medium">828,867</p>
+                <p>Event Bookings</p>
+              </div>
+            </div>
+            <div className="flex flex-row items-center mx-4">
+              <img src={Payment} alt="Payment" className="w-12 h-9 mx-4" />
+              <div>
+                <p className="text-3xl  font-medium">1,926,436</p>
+                <p>Payments</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
